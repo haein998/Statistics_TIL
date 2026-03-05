@@ -47,9 +47,9 @@
 * BigQuery 관련 기초 지식에 대해서 파악할 수 있다. 
 ~~~
 
-**Database**: 데이터의 저장소 (DB)
+**Database**: 데이터의 저장소 (DB)  
 
-**Table**: 데이터가 저장된 공간
+**Table**: 데이터가 저장된 공간  
 
 DB 안에 여러 개의 Table이 존재 -> Table에 있는 데이터를 추출하는데 SQL이 사용
 
