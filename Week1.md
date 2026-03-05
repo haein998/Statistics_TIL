@@ -47,28 +47,27 @@
 * BigQuery 관련 기초 지식에 대해서 파악할 수 있다. 
 ~~~
 
-Database: 데이터의 저장소 (DB)
-Table: 데이터가 저장된 공간
+**Database**: 데이터의 저장소 (DB)
+**Table**: 데이터가 저장된 공간
 DB 안에 여러 개의 Table이 존재 -> Table에 있는 데이터를 추출하는데 SQL이 사용
 
 MySQL, Oracle, PostgreSQL 같은 데이터베이스의 특징은 OLTP 
-OLTP: online transaction processing / 거래를 하기 위해 사용되는 데이터 베이스
-SQL: structured query language / 데이터베이스에서 데이터를 가지고 올 때 사용하는 언어 
+**OLTP**: online transaction processing / 거래를 하기 위해 사용되는 데이터 베이스
+**SQL**: structured query language / 데이터베이스에서 데이터를 가지고 올 때 사용하는 언어 
  > ex. 쿼리문, 쿼리 구문, 쿼리를 짠다, SQL 쿼리 등으로 표현
 
-row 행: 가로 한 줄 / row가 하나의 고유한 데이터 
+**row 행**: 가로 한 줄 / row가 하나의 고유한 데이터 
 * raw 데이터: 원본 데이터
-column 열: 세로 한 줄 / 각 데이터의 특정 속성 값
+**column 열**: 세로 한 줄 / 각 데이터의 특정 속성 값
 
-OLAP: online analytical processing / 분석을 위한 기능 제공 
-데이터 웨어하우스: 데이터를 한 곳에 모아 저장
+**OLAP**: online analytical processing / 분석을 위한 기능 제공 
+**데이터 웨어하우스**: 데이터를 한 곳에 모아 저장
 
 BigQuery: google cloud의 데이터 웨어하우스
 장) 쉽게 데이터 추출 가능
     OLAP 도구라 속도 빠름 
     Firebase, Google Analytics 4의 데이터 쉽게 추출 가능. 사용기기, 위치, OS 버전, 이벤트 행동 획득 가능
     데이터 웨어하우스 사용 위해 서버(컴퓨터) 띄울 필요 없음
-""하하하""
 
 
 
