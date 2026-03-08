@@ -68,7 +68,7 @@ https://www.youtube.com/watch?v=D46j-e_IHlI&list=PLVsNizTWUw7FGzSRCkQrPEEe-ljVXg
 
 ## 02. 구글 코랩과 주피터 노트북
 
-구글 코랩-웹 브라우저에서 무료로 파이썬 프로그램 테스트하고 저장할 수 있는 서비스
+구글 코랩-웹 브라우저에서 무료로 파이썬 프로그램 테스트하고 저장할 수 있는 서비스  
 텍스트셀: 코랩에서 실행할 수 있는 최소 단위. HTML, 마크다운 혼용 사용 가능
 코드 셀: 파이썬 코드를 입력하고 실행할 수 있는 셀 / 일반 프로그램과 달리 셀 단위로 코드 실행 가능하여 이전 셀을 다시 실행할 수 있음. 
 노트북: 코랩 노트북으로 동시에 사용할 수 있는 구글 클라우드의 가상 서버는 최대 다섯 개. 한 개의 노트북은 12시간까지 실행 가능. 
@@ -121,6 +121,9 @@ low_memory=False <- 파일을 나누어 읽지 않고 한 번에 읽는 것.
 # 2️⃣ 수행 인증
 
 <img width="1183" height="732" alt="image" src="https://github.com/user-attachments/assets/23f41b9b-259c-4edb-b2a8-f28661448cea" />
+<img width="1183" height="732" alt="image" src="https://github.com/user-attachments/assets/6423b266-df0e-4c8b-bcb4-1f462ee41891" />
+<img width="1183" height="732" alt="image" src="https://github.com/user-attachments/assets/6735ccb9-6db7-4cd6-8e79-73159fa8cbd3" />
+<img width="1183" height="732" alt="image" src="https://github.com/user-attachments/assets/2c53423e-a842-4e60-9207-11e4b74587f1" />
 
 
 <br>
