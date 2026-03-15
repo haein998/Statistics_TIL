@@ -108,10 +108,20 @@ HAVING: GROUP BY 한 후 조건을 설정하고 싶은 경우 사용
 
 서브쿼리: SELECT문 안에 존재하는 SELECT 쿼리
 
+정렬하기: ORDER BY
+SELECT
+  col
+FROM
+ORDER BY 컬럼 순서
+(순서는 DESC 내림차순 / OSC 오름차순)
+
+출력개수 제한하기: LIMIT
+row 수를 제한하고 싶은 경우 
+
 
 # 2️⃣ 학습 인증란
 
-<!-- 이 글을 지우고, 여기에 학습한 것을 인증해주세요.-->
+
 
 
 
@@ -137,7 +147,10 @@ WHERE type = Electric;
 
 
 ~~~
-여기에 답을 작성해주세요!
+컬럼 나열 시 콤마를 사용해야하는 점, 쿼리문 중간에 위치하면 안되는 세미콜론, 따옴표를 쓰지 않은 점
+SELECT name, type
+FROM pokemon
+WHERE type = 'Electirc';
 ~~~
 
 
@@ -156,7 +169,11 @@ GROUP BY type;
 
 
 ~~~
-여기에 답을 작성해주세요.
+GROUP BY 후에 조건을 설정(60이상)하고 싶은 경우  HAVING을 사용해야 한다. 
+SELECT type, AVG(attack) AS avg_attack
+FROM pokemon
+GROUP BY type
+HAVING AVG(attack) >= 60;
 ~~~
 
 
