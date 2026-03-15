@@ -8,6 +8,7 @@
 https://www.youtube.com/watch?v=s_-VvTLb3gs&list=PLVsNizTWUw7FGzSRCkQrPEEe-ljVXgS7k&index=4
 https://www.youtube.com/watch?v=Il6L8OtNFpc&list=PLVsNizTWUw7FGzSRCkQrPEEe-ljVXgS7k&index=5
 -->
+<img width="968" height="547" alt="Image" src="https://github.com/user-attachments/assets/48fcf162-447b-46aa-9fb8-13668acc43af" />
 
 
 ## DataAnalysis_2nd_TIL
