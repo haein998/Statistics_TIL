@@ -120,7 +120,9 @@ row 수를 제한하고 싶은 경우
 
 
 # 2️⃣ 학습 인증란
-
+<img width="1706" height="591" alt="Image" src="https://github.com/user-attachments/assets/a3da8858-09b7-4346-aa74-8ec04161f653" />
+<img width="1173" height="601" alt="Image" src="https://github.com/user-attachments/assets/f625333c-0548-4e33-8feb-0174179e0cec" />
+<img width="1173" height="601" alt="Image" src="https://github.com/user-attachments/assets/7f015d02-8f18-4610-b947-eb180c86e894" />
 
 
 
