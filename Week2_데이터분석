@@ -99,12 +99,126 @@ print(d3['author'][1])
 => (출력) 홍길동
 --------------
 
+<JSON 문자열을 데이터프레임으로 변환하기>
+read_json() 함수
+판다스는 JSON 문자열을 읽어서 데이터프레임으로 변환하는 read_json() 함수 제공. 
+------
+import pandas as pd
+pd.read_json(d4_str)
+=> (표로 출력)
+------
+pd.DataFrame(d4)
+=> (표로 출력)
+--------
 
+<파이썬에서 XML 데이터 다루기>
+XML: eXtensible Markup Language. 컴퓨터와 사람이 모두 읽고 쓰기 편한 문서 포맷을 위해 고안. 
+엘리먼트들이 계층 구조를 이루면서 정보를 표현. 엘리먼트는 시작 태그와 종료 태그로 감쌈. 
+태그는 < > 기호로 끝나며 태그 이름은 영문자와 숫자 사용. 시작 태그와 종료 태그의 이름 같음. 
+시작태그: <name> 
+종료태그: </name>
+<book> 엘리먼트가 세 개의 하위 엘리먼트를 가지고  있기에 <book> 엘리먼트는 부모 엘리먼트 및 부모 노드
+<name>, <author>, <year>는 자식 엘리먼트라고 한다. 
+
+<XML 문자열을 파이썬 객체로 변환하기>
+fromstring() 함수
+-----------
+X_str = """
+<book>
+  <name> 혼자 공부하는 데이터 분석</name>
+  <author> 박해선</author>
+  <year>2022</year>
+</book?
+"""
+------------
+-------------
+import xml.etree.ElementTree as et
+book = et.fromstring(x_str)
+------------
+-> s_str 문자열을 XML로 변환한 것. 
+
+<자신 엘리먼트 확인하기>
+findtext()
+---------
+book_childs = list(book)
+print(book_childs)
+=> (출력) [<Element 'name' at 0x7f8d78d3dc28>? <Element 'author' at 0x7f8d481ea2c8〉，
+<Element 'year' at 0x7f8d481ea048>]
+----------
+-> <book> 엘리먼트의 자식 엘리먼트를 구하고 자식 엘리먼트에 담긴 텍스트를 읽은 것. 
+
+--------
+name, author, year = book_childs
+print(name.text)
+print(author.text)
+print(year.text)
+=> (출력) 혼자 공부하는 데이터 분석
+박해선 
+2022
+--------------
+--------------
+name=book.findtext('name')
+author=book.findtext('author')
+year=book.findtext('year')
+print(name)
+print(author)
+print(year)
+=> (출력) 혼자 공부하는 데이터 분석
+박해선
+2022
+-------------
+
+<여러 개의 자식 엘리먼트 확인하기: findall() 메서드와 for 문>
+동일한 이름을 가진 여러 개의 자식 엘리먼트를 찾을 때는 findall() 메서드와 for 문을 사용.
+-----------
+for book in books.findall('book'):
+  name=book.findtext('name')
+  author=book.findtext('author')
+  year=book.findtext('year')
+  print(name)
+  print(author)
+  print(year)
+  print()
+=> 혼자 공부하는 데이터 분석
+ 박해선
+2022
+
+혼자 공부하는 머신러닝+딥러닝
+박해선 
+2020
+
+<공개 API로 웹에서 데이터 가져오기>
+requests 패키지
+get() 함수
+jso() 메서드
 
 
 ## 02.웹 스크래핑 사용하기
 
-<!-- 새롭게 배운 내용을 자유롭게 정리해주세요.-->
+웹스크래핑/웹크롤링: 프로그램으로 웹사이트의 페이지를 옮겨 가면서 데이터를 추출하는 작업
+
+-검색 결과 페이지 가져오기
+gdown 패키지를 사용해 다운로드
+
+-데이터프레임 행과 열 선택하기: loc 메서드
+loc는 메서드지만 대괄호를 사용하여 행의 목록과 열의 목록을 받음. 
+
+-검색 결과 페이지 HTML 가져오기: request.get() 함수
+
+
+HTML에서 데이터 추출하기: 뷰티플수프
+-크롬 개발자 도구로 HTML 태그 찾기
+-태그 위치 찾기: find() 메서드
+-도서 상세 페이지 HTML 가져오기
+-테이블 태그를 리스트로 가져오기: find_all() 메서드
+-태그 안의 텍스트 가져오기: get_text() 메서드
+
+
+데이터프레임 행 혹은 열에 함수 적용하기: apply() 메서드
+첫 번째 매개변수는 실행할 함수. axis=1이면 행에 0이면 열에 적용
+
+데이터프레임과 시리즈 합치기: merge() 함수
+
 
 
 # 2️⃣ 수행 인증
