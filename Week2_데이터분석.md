@@ -8,7 +8,6 @@
 https://www.youtube.com/watch?v=s_-VvTLb3gs&list=PLVsNizTWUw7FGzSRCkQrPEEe-ljVXgS7k&index=4
 https://www.youtube.com/watch?v=Il6L8OtNFpc&list=PLVsNizTWUw7FGzSRCkQrPEEe-ljVXgS7k&index=5
 -->
-<img width="968" height="547" alt="Image" src="https://github.com/user-attachments/assets/48fcf162-447b-46aa-9fb8-13668acc43af" />
 
 
 ## DataAnalysis_2nd_TIL
@@ -226,10 +225,14 @@ HTML에서 데이터 추출하기: 뷰티플수프
 
 <!-- 교재에서 안내된 과정을 직접 실행해본 뒤, 진행 결과가 보이도록 4~6장의 스크린샷을 캡처하여 아래에 첨부해주세요.-->
 
+<img width="968" height="547" alt="Image" src="https://github.com/user-attachments/assets/48fcf162-447b-46aa-9fb8-13668acc43af" />
+<img width="968" height="547" alt="Image" src="https://github.com/user-attachments/assets/2bb1288e-5a6a-4348-a8f5-22ff8300b8e5" />
 
+<img width="968" height="547" alt="Image" src="https://github.com/user-attachments/assets/a970d44d-2dc2-4bca-9e9b-7a95b56a019e" />
 
+<img width="1706" height="591" alt="Image" src="https://github.com/user-attachments/assets/d17241b4-ba70-425c-8f1e-ded42382a5e6" />
 
-
+<img width="1706" height="591" alt="Image" src="https://github.com/user-attachments/assets/58531327-55b8-4922-9e0c-7c76ed8a0719" />
 
 
 <br>
@@ -251,7 +254,7 @@ HTML에서 데이터 추출하기: 뷰티플수프
 ```
 여기에 선택한 답과 그 이유를 간단히 서술해주세요!
 ```
-
+Scrapy / requests와 뷰티플수프를 합쳐놓은 것과 비슷하게 작동 가능. 
 
 
 ### 🎉 수고하셨습니다.
