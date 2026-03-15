@@ -47,6 +47,35 @@
 ~~~
 
 <!-- 새롭게 배운 내용을 자유롭게 정리해주세요.-->
+SQL 쿼리문은 SELECT, FROM, WHERE을 활용한 문법으로 작성
+
+SELECT: 테이블의 어떤 컬럼을 출력할 것인가?
+  Col1 AS new_name,
+  Col2,
+  Col3
+FROM Dataset.Table: 어떤 테이블에서 데이터를 확인할 것인가?
+WHERE: 만약 원하는 조건이 있다면 어떤 조건인가?
+  COl1=1
+
+*: 모든 컬럼을 출력하겠다
+* EXCEPT(제외할컬럼)
+
+-집합처럼 생각해보
+데이터셋 안에 여러 개의 테이블 존재. 
+테이블 안에 원하는 데이터를 가져옴. 
+
+FROM
+데이터를 확인할 Table 명시
+이름이 길면 AS "별칭"으로 지정 가능
+
+WHERE
+FROM에 명시된 Table에 저장된 데이터를 필터링(조건 설정)
+Tavle에 있는 컬럼을 조건 설정
+
+SELECT 
+Table에 저장되어 있는 컬럼 선택
+여러 컬럼 명시 가능 
+col1 AS "별칭"으로 지정 가능
 
 
 ## 2-5. 집계 (Group By / HAVING / SUM,COUNT)
@@ -59,7 +88,25 @@
 ~~~
 
 <!-- 새롭게 배운 내용을 자유롭게 정리해주세요.-->
+집계: GROUP BY
+같은 값끼리 모아서 그룹화
+특정 컬럼을 기준으로 모으면서 다른 컬럼에선 집계가능 (합, 평균, MAX, MIN)
 
+SELECT
+  집계할 컬럼1
+  집계함수(COUNT, MAX, MIN)
+FROM Table
+GROUP BY
+  집계할 컬럼1
+
+DISTINCT: 고유값을 알고 싶은 경우. 중복을 제거하는 것.
+
+
+조건을 설정하고 싶은 경우: WHERE / HAVING
+WHERE: Table에 바로 조건을 설정하고 싶은 경우 사용 
+HAVING: GROUP BY 한 후 조건을 설정하고 싶은 경우 사용
+
+서브쿼리: SELECT문 안에 존재하는 SELECT 쿼리
 
 
 # 2️⃣ 학습 인증란
