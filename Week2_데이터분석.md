@@ -48,56 +48,60 @@ HTTP 프로토콜을 사용하지만 HTML을 주고 받는 것이 아니라 CSV,
 
 JSON: JavaScript Object Notation의 약자. 파이썬의 딕셔너리와 리스트를 중첩해 놓은 것과 비슷. 
 중괄호를 사용하고 파이썬의 딕셔너리와 비슷하게 키와 값을 콜론(:)으로 연결. 
-/
+/  
 d= {"name":"혼자 공부하는 데이터 분석"}  
 print(d['name']) <- 파이썬은 작따, 큰따 모두 사용 가능  
 /
 
 파이썬 객체를 JSON 문자열로 변환하는 법
 json.dumps() 함수 사용
--------
+
+/  
 import json
-d_str = json.dumps(d, ensure_ascii=False)
-print(d_str)
-=> (출력) {"name": "혼자 공부하는 데이터 분석"}
---------
+d_str = json.dumps(d, ensure_ascii=False)  
+print(d_str)  
+=> (출력) {"name": "혼자 공부하는 데이터 분석"}  
+/  
+
 json.dumps() 함수를 사용할 때 ensure_ascii 매개변수를 False로 지정한 이유는 딕셔너리 d에 한글이 포함되어 있기 때문.
 json.dumps() 함수는 아스키 문자 외의 다른 문자를 16진수로 출력하기 때문에 한글이 제대로 보이지 않음
 ensure_ascii 매겨변수를 False로 지정하여 원래 저장된 문자 그대로 출력 가능. 
 
------
+/  
 print(type(d_str))
-=> (출력) <class 'str'>
-------
+=> (출력) <class 'str'>  
+/  
 딕셔너리가 문자열로 바뀐 것을 확인할 수 있음. 
 
 웹 기반 API는 전송하려는 파이썬 객체를 json.dumps() 함수를 사용하여 JSON 문자열로 변화하여 전송하지만 이 문자열을 파이썬 프로그램에 사용하려면 다시 파이썬 딕셔너리로 변경 필요
 
 <JSON 문자열을 파이썬 객체로 변환하기>
-json.loads() 함수
-------
+json.loads() 함수  
+/
 ds=json.loads(d_str)
 print(d2['name'])
-=> (출력) 혼자 공부하는 데이터 분석
-------
+=> (출력) 혼자 공부하는 데이터 분석  
+/  
+
 print(type(d2))
-=> (출력) <class 'dict'>
------
+=> (출력) <class 'dict'>  
+/  
 d_str 문자열을 파이썬 딕셔너리로 변경된 걸 확인 가능.
 
------
-df=json.loads('{"name": "혼자 공부하는 데이터 분석", "author": "박해선", "year": 2022}')
-print(d3['name'])
-print(d3['author'])
-print(d3['year'])
-=> (출력) 혼자 공부하는 데이터 분석
-박해선
-2022
--------------
-d3=json.loads('{"name": "혼자 공부하는 데이터 분석", "author": ["박해선", "홍길동"], "year": 2022}')
-print(d3['author'][1])
-=> (출력) 홍길동
---------------
+/  
+df=json.loads('{"name": "혼자 공부하는 데이터 분석", "author": "박해선", "year": 2022}')  
+print(d3['name'])  
+print(d3['author'])  
+print(d3['year'])  
+=> (출력) 혼자 공부하는 데이터 분석  
+박해선  
+2022  
+/  
+d3=json.loads('{"name": "혼자 공부하는 데이터 분석", "author": ["박해선", "홍길동"], "year": 2022}')  
+print(d3['author'][1])  
+=> (출력) 홍길동  
+/  
+
 
 <JSON 문자열을 데이터프레임으로 변환하기>
 read_json() 함수
