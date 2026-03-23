@@ -119,6 +119,13 @@ FROM basic.trainer
 WHERE           
 name IN ('Iris', 'Whitney', 'Cynthia');     
 
+<뱃지가 6개 이상인 트레이너 몇 명>     
+SELECT        
+ COUNT (id) AS trainer_cnt
+FROM basic.trainer         
+WHERE 
+ badge_count >= 6 
+
  
 ## 2-8. 새로운 집계함수
 
