@@ -68,20 +68,20 @@ FROM basic.pokemon
 WHERE
 type2 IS NULL;
 
-type2 값이 비어 있는 포켓몬만 골라서 전체 개수를 세기
+<type2 값이 비어 있는 포켓몬만 골라서 전체 개수를 세기>      
 
-SELECT
-type1,
-COUNT(id) AS cnt
-FROM basic.pokemon
-WHERE
-type2 IS NULL
-GROUP BY
-type1
-ORDER BY
-cnt DESC;
+SELECT       
+type1,          
+COUNT(id) AS cnt            
+FROM basic.pokemon          
+WHERE         
+type2 IS NULL        
+GROUP BY       
+type1           
+ORDER BY           
+cnt DESC;           
 
-type2가 없는 포켓몬만 대상으로 type1별 개수를 구하고, 많은 순으로 정렬
+type2가 없는 포켓몬만 대상으로 type1별 개수를 구하고, 많은 순으로 정렬             
 
 SELECT
 type1,
