@@ -68,7 +68,8 @@ FROM basic.pokemon
 WHERE
 type2 IS NULL;
 
-<type2 값이 비어 있는 포켓몬만 골라서 전체 개수를 세기>      
+
+<type2 값이 비어 있는 포켓몬만 골라서 전체 개수를 세기>     
 
 SELECT       
 type1,          
