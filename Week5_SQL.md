@@ -116,45 +116,45 @@ SELECT
 
 0. 데이터 검증을 위한 쿼리  
 
--- SELECT
---   COUNT(*)
--- FROM(
--- SELECT
---   id,
---   catch_date,
---   DATE(DATETIME(catch_datetime, "Asia/Seoul")) As catch_datetime_kr_date
---   FROM basic.trainer_pokemon
--- )
--- WHERE
---   catch_date != catch_datetime_kr_date
-  #같지 않은 경우 141 /  같은 경우 238
------ 컬럼의 설명을 꼭 확인하고 SQL을 작성해야 한다. 
+-- SELECT   
+--   COUNT(*)   
+-- FROM(   
+-- SELECT   
+--   id,   
+--   catch_date,   
+--   DATE(DATETIME(catch_datetime, "Asia/Seoul")) As catch_datetime_kr_date    
+--   FROM basic.trainer_pokemon   
+-- )    
+-- WHERE    
+--   catch_date != catch_datetime_kr_date    
+  #같지 않은 경우 141 /  같은 경우 238    
+----- 컬럼의 설명을 꼭 확인하고 SQL을 작성해야 한다.     
 
 
-SELECT
-  COUNT(DISTINCT id) AS cnt
-FROM basic.trainer_pokemon
-WHERE
-  EXTRACT(YEAR FROM DATETIME(catch_datetime, "Asia/Seoul")) = 2023
-  AND EXTRACT(MONTH FROM DATETIME(catch_datetime, "Asia/Seoul")) = 1
+SELECT    
+  COUNT(DISTINCT id) AS cnt    
+FROM basic.trainer_pokemon    
+WHERE    
+  EXTRACT(YEAR FROM DATETIME(catch_datetime, "Asia/Seoul")) = 2023    
+  AND EXTRACT(MONTH FROM DATETIME(catch_datetime, "Asia/Seoul")) = 1    
 
 # 2  
----2-0. battle.datetime, battle_timestamp 검증  
+---2-0. battle.datetime, battle_timestamp 검증    
 
--- SELECT
---   -- id,
---   -- battle_datetime, 
---   -- DATETIME(battle_timestamp,"Asia/Seoul") AS battle_timestamp_kr
---   COUNTIF(battle_datetime = DATETIME(battle_timestamp, "Asia/Seoul")) AS battle_datetime_same_battle_timestamp_kr,
--- COUNTIF(battle_datetime != DATETIME(battle_timestamp, "Asia/Seoul")) AS battle_datetime_same_battle_timestamp_kr
--- FROM basic.battle
-
-SELECT
- COUNT(DISTINCT id) AS battle_cnt
-FROM basic.battle
-WHERE 
-  EXTRACT (HOUR FROM battle_datetime) >= 6
-  AND EXTRACT (HOUR FROM battle_datetime) <= 18
+-- SELECT   
+--   -- id,    
+--   -- battle_datetime,     
+--   -- DATETIME(battle_timestamp,"Asia/Seoul") AS battle_timestamp_kr     
+--   COUNTIF(battle_datetime = DATETIME(battle_timestamp, "Asia/Seoul")) AS battle_datetime_same_battle_timestamp_kr,       
+-- COUNTIF(battle_datetime != DATETIME(battle_timestamp, "Asia/Seoul")) AS battle_datetime_same_battle_timestamp_kr    
+-- FROM basic.battle       
+  
+SELECT    
+ COUNT(DISTINCT id) AS battle_cnt    
+FROM basic.battle    
+WHERE      
+  EXTRACT (HOUR FROM battle_datetime) >= 6    
+  AND EXTRACT (HOUR FROM battle_datetime) <= 18       
 
 #3  
 
