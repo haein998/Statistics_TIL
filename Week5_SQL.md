@@ -233,7 +233,8 @@ FROM basic.pokemon
 <!-- 틀린쿼리에 대한 오류의 원인도 같이 작성해주세요. 문제에서 제공된 order_time 컬럼은 DATETIME type의 데이터를 가지고 있다고 가정합니다. -->
 
 ~~~
-여기에 답을 작성해주세요!
+2번: 위에서 order_time, HOUR으로 SELECT 했는데 GROUP BY에서는 order_time을 사용하고 있어 오류 출력
+4번: EMD 문이 누락되어 있어 오류 
 ~~~
 
 
@@ -264,7 +265,8 @@ FROM pokemon;
 <!-- 근거와 함께 답을 작성해주세요 -->
 
 ~~~
-여기에 답을 작성해주세요!
+Pikachu, Bulbasaur
+Charmander, Squirtle은 HOT과 COOL이 되며 나머지가 normal로 출력
 ~~~
 
 
