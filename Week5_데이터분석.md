@@ -38,11 +38,55 @@ https://www.youtube.com/watch?v=deYY4xHsI0o&list=PLVsNizTWUw7FGzSRCkQrPEEe-ljVXg
 
 ## 01. 맷플롯립 기본 요소 알아보기
 
-<!-- 새롭게 배운 내용을 자유롭게 정리해주세요.-->
+# Figure 객체    
+피겨.   
+matplotlib 임포트 후 scatter()함수로 x축 y축 설정  alpha 매개변수로 투명도 조절    
+figsize로 크기 조절. 숫자는 인치     
+dpi 매개변수 지정을 통해 크기 조절 가능  
+ 
+
+# rcParams 객체     
+맷플롯립 그래프의 기본값 관리하는 객체   
+DPI 기본값 변경 -> 해상도   
+scatter.marker -> 산점도 마커 모양 변경   
+
+
+# 여러 개의 서브플롯 출력하기   
+서브플롯: 맷플롯립의 axes 클랙스의 객체. 하나의 서브플롯은 두 개 이상의 축을 포함.     
+- 서브플롯 그리기 subplots()
+axs[0]/[1] 첫번쩨/두번째 그래프
+- 서브플롯 가로로 나란히 출력 subplots(1,2) <- 한 개 행, 두 개 열 생성   
+     
 
 ## 02. 선 그래프와 막대 그래프 그리기
 
-<!-- 새롭게 배운 내용을 자유롭게 정리해주세요.-->
+# 연도별 발행 도서 개수 구하기  
+value_counts() 메서드: 한 열에서 고유한 값의 등장 횟수  
+sort_index() 메서드: 인덱스 순서대로 데이터 정렬  
+
+# 주제별 도서 개수 구하기  
+주제분류번호 열 값을 받아 첫 번째 문자를 반환하는 kdx_1st_char()함수 -> apply()메서드에 넣어 반복 적용  
+
+# 선 그래프 그리기  
+plot()함수: 선그래프   
+title()함수: 그래프 제목   
+xlabel()함수, ylabel()함수: xy축 이름    
+linestyle 매개변수로 선 모양 지정   
+color 매개변수로 색상 지정   
+marker 매개변수   
+xticks()함수: x축 눈금 지정   
+
+# 막대 그래프 그리기   
+bar()함수  
+annontate()함수의 ha 매개변수로 텍스트 위치 조절 rigt/left   
+fontsize 매개변수로 텍스트 크기 조절   
+color 매개변수로 색 조정   
+bar()함수에서 width 매개변수로 막대 두께 조절   
+barh()함수: 가로 막대 그래프   
+막대 두께 매개변수는 height 매개변수   
+텍스트를 막대 중앙에 정렬할 때 va  매개변수 사용   
+
+
 
 
 # 2️⃣ 수행 인증
