@@ -65,7 +65,8 @@ value_counts() 메서드: 한 열에서 고유한 값의 등장 횟수
 sort_index() 메서드: 인덱스 순서대로 데이터 정렬  
 
 # 주제별 도서 개수 구하기  
-주제분류번호 열 값을 받아 첫 번째 문자를 반환하는 kdx_1st_char()함수 -> apply()메서드에 넣어 반복 적용  
+주제분류번호 열 값을 받아 첫 번째 문자를 반환하는 kdx_1st_char()함수   
+-> apply()메서드에 넣어 반복 적용  
 
 # 선 그래프 그리기  
 plot()함수: 선그래프   
@@ -92,6 +93,12 @@ barh()함수: 가로 막대 그래프
 # 2️⃣ 수행 인증
 
 <!-- 교재에서 안내된 과정을 직접 실행해본 뒤, 진행 결과가 보이도록 4~6장의 스크린샷을 캡처하여 아래에 첨부해주세요.-->
+<img width="795" height="625" alt="image" src="https://github.com/user-attachments/assets/735715b4-0c5a-4eca-b26e-5332f29683a2" />   
+<img width="795" height="625" alt="image" src="https://github.com/user-attachments/assets/0771313a-feb3-43a3-a2db-b8fd3b278d53" />  
+<img width="795" height="625" alt="image" src="https://github.com/user-attachments/assets/d85d3b78-1043-4369-ab2d-a75263650610" />
+<img width="795" height="625" alt="image" src="https://github.com/user-attachments/assets/daeb9cd2-c489-425f-a2b1-751a3277bf53" />
+
+
 
 
 
