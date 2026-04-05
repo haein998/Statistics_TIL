@@ -119,7 +119,7 @@ IF(1=2, '동일한 결과', '동일하지 않은 결과') AS result2
 ✅ 학습 목표 :
 * 4-5, 4-7 각각에서 두 문제 이상 (최소 4문제) 푼 내용 정리하기
 ~~~
-# 1
+#1
 
 0. 데이터 검증을 위한 쿼리  
 
@@ -145,7 +145,7 @@ WHERE
   EXTRACT(YEAR FROM DATETIME(catch_datetime, "Asia/Seoul")) = 2023    
   AND EXTRACT(MONTH FROM DATETIME(catch_datetime, "Asia/Seoul")) = 1    
 
-# 2  
+#2  
 ---2-0. battle.datetime, battle_timestamp 검증    
 
 -- SELECT   
