@@ -95,14 +95,21 @@ DATETIME_DIFF
 ~~~
 
 조건문: 특정 조건이 충족되면 어떤 행동을 하자.  
+
 - CASE WHEN  
 SELECT  
  CASE  
   WHEN 조건1  
   WHEN 조건2   
  ELSE 그 외 조건일 경우 결과    
- END AS 새로운 컬럼 이름   
+ END AS 새로운 컬럼 이름
 
+- IF
+IF (조건문, True일 떄의 값, False일 때의 값) AS 새로운_컬럼_이름
+
+SELECT  
+IF(1=1, '동일한 결과', '동일하지 않은 결과') AS result1,  
+IF(1=2, '동일한 결과', '동일하지 않은 결과') AS result2  
 
 
 
@@ -157,6 +164,28 @@ WHERE
   AND EXTRACT (HOUR FROM battle_datetime) <= 18       
 
 #3  
+SELECT      
+  -- *, #모든 컬럼을 보여  
+  id,   
+  kor_name,    
+  speed,    
+  IF(speed>=70, "빠름", "느림") AS Speed_category     
+FROM basic.pokemon      
+
+#4  
+SELECT  
+  id,   
+  kor_name,  
+  type1,   
+  CASE     
+    WHEN type1 = "Water" THEN "물"   
+    WHEN type1 = "Fire" THEN "불"   
+    WHEN type1 = "Electric" THEN "전기"   
+    ELSE "기타"   
+  END AS type1_Korean   
+FROM basic.pokemon   
+
+
 
 
 <br>
