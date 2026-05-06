@@ -57,6 +57,19 @@
 
 <!-- 새롭게 배운 내용을 자유롭게 정리해주세요.-->
 
+### SQL JOIN   
+
+: 서로 다른 데이터 테이블을 연결하는 것   
+
+포켓몬 join에서 trainer id와 id는 공통으로 있어 연결할 수 있는 key  
+큰 table은 작은 table을 합친 것  
+공통적으로 존재하는 컬럼(key)가 있다면 join 가능  
+
+join을 해야하는 이유 ) 관계향 데이터베이스 설계 시 정규화 과정을 거침   
+정규화는 중복을 최소화하게 데이터를 구조화   
+데이터를 다양한 table에 저장해서 필요할 때 join해서 사용   
+
+데이터 웨어하우스에서 join + 필요한 연산을 해서 활용  
 
 
 ## 5-3. 다양한 JOIN 방법
@@ -69,6 +82,11 @@
 
 <!-- 새롭게 배운 내용을 자유롭게 정리해주세요.-->
 
+### SQL JOIN 방법   
+-(INNER) JOIN: 두 테이블의 공통 요소만 연결   
+-LEFT/RIGHT (OUTER) JOIN: 왼쪽 오른쪽 테이블 기준으로 연결   
+-FULL (OUTER) JOIN: 양쪽 기준으로 연결   
+-CROSS JOIN: 두 테이블의 각각 요소 곱하기  
 
 
 ## 5-4. JOIN 쿼리 작성하기 
@@ -80,6 +98,21 @@
 ~~~
 
 <!-- 새롭게 배운 내용을 자유롭게 정리해주세요.-->
+
+### SQL JOIN 쿼리 작성하는 흐름   
+테이블 확인   
+기준 테이블 정의  
+JOIN KEY 찾기 
+결과 예상하기  
+쿼리작성 및 검증   
+
+### SQL JOIN 문법  
+FROM table1 AS A  
+LEFT JOIN table2 AS B   (LEFT 자리에 INNER / RIGHT / FULL 로 변경 시 가능)  
+ON A.key = B.key  #별칭(Alias) 사용가능  
+
+CROSS JOIN의 경우   
+ON ~ 부분작성 x   
 
 
 
