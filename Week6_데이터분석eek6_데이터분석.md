@@ -78,11 +78,43 @@ set_ylim 메서드: y축의 좌표 지정
 
 스택영역그래프: 하나의 선 그래프 위에 다른 선 그래프 차례대로 쌓는 것. 그래프 사이 간격이 y축의 값  
 stackplot() 메서드 사용  
+pivot_table() 메서드: 하나의 열을 2차원 배열로 바꾸는 것. index 매개변수와 columns 매개변수에 원본 데이터프레임 열 지정하면 각 열의 고유한 값이 피벗 테이블로 변환  
+loc 매개변수로 범례 위치 지정.   
+
+### 하나의 피겨에 여러 개의 막대그래프 그리기  
+스택막대그래프: 막대그래프를 옆으로 나란히 놓치 않고 스택 영역 그래프처럼 위로 쌓은 그래프  
+bottom 매개변수를 사용하여 수동으로 막대 쌓기  
+cumsum() 메서드 사용하여 값 누적하기  
+가장 큰 막대를 먼저 그려야 함. 그렇지 않을 경우 큰 막대가 이전에 그린 막대를 모두 덮어쓰게 됨.  
+range()함수로 행 개수만큼 인덱스 번호 만들기.  for문에 reversed()함수 사용하여 인덱스 역순으로 반복   
+
+### 원그래프 그리기  
+전체 데이터에 대한 비율을 원 부채꼴로 표현(파이차트)  
+원 그래프는 맷플롯립의 pie()메서드로 그릴 수 있음   
+시각적으로 어떤 데이터가 더 큰 지 한 눈에 구분하기 어렵다는 단점  
+
+autopct 매개변수: %d를 하면 부채꼴 비율이 정수로 표시  
+explode 매개변수: 부채꼴 조각을 원 그래프에서 조금 떨어뜨려 시각적 부각  
+
+
+### 맷플롯립으로 복잡한 그래프 그리기    
+stackplot() 스택 영역 그래프  
+pivot_table() 데이터 변환 
+cumsum() 막대 길이 미리 누적  
+pie() 원 그래프  
+
+### 스택 막대 그래프 그리기  
+plot.bar(): 막대 나란히 출력  
+stacked 매개변수를 True로 지정 -> 스택 막대 그래프 그릴 수 있음  
 
 
 # 2️⃣ 수행 인증
 
 <!-- 교재에서 안내된 과정을 직접 실행해본 뒤, 진행 결과가 보이도록 4~6장의 스크린샷을 캡처하여 아래에 첨부해주세요.-->
+<img width="761" height="502" alt="image" src="https://github.com/user-attachments/assets/40417490-c2d1-4351-9cef-12cd0ed6a584" />
+<img width="807" height="606" alt="image" src="https://github.com/user-attachments/assets/a5dd518b-92b6-45ba-9850-02f20120a2fb" />
+<img width="807" height="606" alt="image" src="https://github.com/user-attachments/assets/8d3df3c9-2555-422c-a9c8-c910d1cfcac1" />
+<img width="780" height="504" alt="image" src="https://github.com/user-attachments/assets/60a365d1-9ed5-4d9e-9ece-2f69ccca8751" />
 
 
 
