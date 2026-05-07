@@ -132,7 +132,9 @@ stacked 매개변수를 True로 지정 -> 스택 막대 그래프 그릴 수 있
 여기에 코랩 링크를 첨부해주세요!
 (제출 전, 코랩의 공유 설정을 ‘링크가 있는 모든 사용자가 보기 가능’으로 변경했는지 반드시 확인해주세요.)
 ```
-
+<img width="985" height="492" alt="image" src="https://github.com/user-attachments/assets/b627ff37-92c4-43aa-b5bc-ab4a08820ac0" />
+<img width="995" height="679" alt="image" src="https://github.com/user-attachments/assets/a56366d4-c1dc-4ff1-9d90-fc13da0322c5" />
+https://colab.research.google.com/drive/1r6mlGb-mXKkyYqnJMLETf6MGpM8cI7JI?usp=sharing
 
 
 ### 🎉 수고하셨습니다.
