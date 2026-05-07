@@ -125,6 +125,68 @@ ON ~ 부분작성 x
 
 <!-- 새롭게 배운 내용을 자유롭게 정리해주세요.-->
 
+#3. 트레이너의 고향과 포켓몬을 포획한 위치를 비교하여 자신의 고향에서 포켓몬을 포획한 트레이너의 수를 계산
+#트레이너 고향과 포켓몬의 포켓몬의 포획 위치가 같은 트레이너의 수를 계산하기 
+#trainer(hometown), trainer_pokemon(location) JOIN => hometown = location => 트레이너의 수 count
+#데이터의 기간: X
+#사용할 테이블: trainer.id = trainer_pokemon.trainer_id
+#trainer_pokemon을 LEFT로 
+
+SELECT
+  COUNT(tp.trainer_id) AS trainer_uniq,
+FROM basic.trainer AS t
+LEFT JOIN basic.trainer_pokemon AS tp
+ON t.id = tp.trainer_id
+WHERE
+  location IS NOT NULL
+  AND t.hometown = tp.location    
+
+
+#4
+SELCET
+  
+  FROM 
+    SELECT
+    id,
+    trainer_id,
+    pokemon_id,
+    status
+  FROM basic.trainer_pokemon
+  WHERE
+    status IN ("Active", "Training")
+  AS tp 
+LEFT JOIN basic.pokemon AS p
+ON tp.pokemon_id = p.id
+LEFT JOIN basic.trainer AS t
+ON tp.trainer_id = t.id
+WHERE
+  t.achivement_level = "Master"
+GROUP BY
+  type1
+ORDER BY
+  2 DESC
+LIMIT 1
+
+#5
+SELECT
+  *
+FROM(
+SELECT
+  id,
+  trainer_id,
+  pokemon_id,
+  status
+FROM basic.trainer_pokemon
+WHERE 
+  status IN ("Active", "Training")
+) AS tp
+LEFT JOIN basic.trainer AS t
+ON tp.pokemon_id =t.id
+LEFT JOIN pokemon AS p
+ON tp.pokemon_id=p.id
+WHERE
+  t.hometown = "INCHEON"
+
 
 
 <br>
