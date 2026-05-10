@@ -208,7 +208,9 @@ https://school.programmers.co.kr/learn/courses/30/lessons/133027
 
 > 주문량이 많은 아이스크림들 조회하기
 
-<!-- 정답을 맞추게 되면, 정답입니다. 이 부분을 캡처해서 이 주석을 지우시고 첨부해주시면 됩니다. --> 
+
+<img width="766" height="503" alt="image" src="https://github.com/user-attachments/assets/01172b56-521b-4961-a9bc-0f601eb26b68" />
+<img width="766" height="503" alt="image" src="https://github.com/user-attachments/assets/e3b32c77-7633-4e0a-b0cf-35d3f0c49002" />
 
 
 
