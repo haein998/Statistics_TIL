@@ -52,23 +52,30 @@ https://www.youtube.com/watch?v=lBk5YhLZevs&list=PLVsNizTWUw7GCfy5RH27cQL5MeKYnl
 ## 01-2. MySQL 설치하기
 > **MySQL 설치하는 과정(34 ~ 50p)과 과제 글을 참고하여 설치한 뒤에 인증해주세요.**
 
-<!-- 이번 챕터는 개념정리 없이 MySQL 설치 후 인증사진으로 대체합니다. -->
+<img width="2278" height="1272" alt="스크린샷 2026-09-07 011445" src="https://github.com/user-attachments/assets/cd5bea79-7852-4672-835f-921b84ef52e9" />
 
-<!-- 이 부분을 지우고 인증사진을 제출해주세요.-->
+
 
 
 ## 02-2. 데이터베이스 시작부터 끝까지 
 > **데이터베이스 만들기(68 ~ 71p)의 1~5과정 진행 후 과제 페이지에서 요구하는 인증사진을 첨부해주세요.**
-<!-- 이 부분을 지우고 인증사진을 제출해주세요.-->
+<img width="2278" height="1272" alt="스크린샷 2026-09-07 011445" src="https://github.com/user-attachments/assets/c9b5342c-6394-44b9-a250-1288522f4388" />
+
 
 > **테이블 만들기(71 ~ 75p)의 1~7과정 진행 후 과제 페이지에서 요구하는 인증사진을 첨부해주세요.**
-<!-- 이 부분을 지우고 인증사진을 제출해주세요.-->
+<img width="1344" height="672" alt="스크린샷 2026-09-07 012001" src="https://github.com/user-attachments/assets/317612a9-74ab-474f-8e66-2406408ddb89" />
+<img width="2066" height="1000" alt="스크린샷 2026-09-07 013105" src="https://github.com/user-attachments/assets/e611b3a0-4eb0-46ee-b91a-5c772f9ab666" />
 
 > **데이터 입력하기(75 ~ 79p)의 1~11과정 진행 후 과제 페이지에서 요구하는 인증사진을 첨부해주세요.**
-<!-- 이 부분을 지우고 인증사진을 제출해주세요.-->
+<img width="2112" height="1062" alt="스크린샷 2026-09-07 014304" src="https://github.com/user-attachments/assets/8836cf13-9baa-4c50-97b4-f5fb53778345" />
+<img width="1468" height="900" alt="스크린샷 2026-09-07 013439" src="https://github.com/user-attachments/assets/96001c53-cd6a-4296-be15-2e8fa0c5eb3a" />
+
+
 
 > **데이터 활용하기(80 ~ 83p)의 1~6과정 진행 후 과제 페이지에서 요구하는 인증사진을 첨부해주세요.**
-<!-- 이 부분을 지우고 인증사진을 제출해주세요.-->
+<img width="1998" height="1426" alt="스크린샷 2026-09-07 015052" src="https://github.com/user-attachments/assets/a35a1baf-631f-4f69-9a20-e86a12de1993" />
+<img width="1800" height="1412" alt="스크린샷 2026-09-07 014910" src="https://github.com/user-attachments/assets/e9fb0633-9c55-4144-8cc5-955ceb0197f2" />
+
 
 ---
 
