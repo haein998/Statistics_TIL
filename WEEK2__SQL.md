@@ -152,17 +152,19 @@ WHERE ________;
 
 <!-- ORDER BY절과 GROUP BY절 그리고 HAVING절에 관해 배우게 된 점을 적어주세요. -->
 
-```
+
 여기에 배우게 된 점을 적어주세요!
-ORDER BY절: 결과 값이나 개수에 대해서는 영향을 미치지 않지만, 결과가 출력되는 순서를 조절         
+### ORDER BY절:      
+결과 값이나 개수에 대해서는 영향을 미치지 않지만, 결과가 출력되는 순서를 조절   
+
 ```
 SELECT mem_id, mem_name, debut_date    
     FROM member    
     ORDER BY debit_date;      
 ```     
-제일 뒤에 ASC를 붙이면 오름차순. DESC를 붙이면 내림차순.       
+제일 뒤에 **ASC** 를 붙이면 오름차순. **DESC**를 붙이면 내림차순.       
            
-ORDER BY 절은 WHERE 절 다음에 나와야 한다.     
+ORDER BY 절은 ***WHERE 절 다음***에 나와야 한다.     
 ```    
 SELECT mem_id, mem_name, debut_date, height          
     FROM member     
@@ -170,7 +172,7 @@ SELECT mem_id, mem_name, debut_date, height
     ORDER BY height DESC;      
 ```    
 
-정렬 기준은 1개의 열이 아닌 여러 개 열로 지정 가능.      
+정렬 기준은 1개의 열이 아닌 ***여러 개 열***로 지정 가능.      
 첫 번째 지정 열로 정렬 후, 동일할 경우 다음 지정 열로 정렬 가능   
 ```      
 SELECT mem_id, mem_name, debut_date, height   
@@ -179,17 +181,43 @@ SELECT mem_id, mem_name, debut_date, height
     ORDER BY height DESC, debut_Date ASC;      
 ```       
       
-LIMIT은 출력하는 개수를 제한     
-LIMIT 시작, 개수 형식으로 사용. LIMIT 3은 0번째부터 3건이라는 의미     
+**LIMIT**은 출력하는 개수를 제한     
+***LIMIT 시작, 개수 형식***으로 사용. LIMIT 3은 0번째부터 3건이라는 의미     
 ```  
 SELECT *        
     FROM member        
     LIMIT 3;       
 ```           
 
-GROUP BY절: 
-HAVING절:
-```
+**DISTINCT**은 조회된 결과에서 중복된 데이터를 1개만 남김.    
+```      
+SELECT DISTINCT addr FROM member;    
+```    
+
+
+### GROUP BY절: 
+그룹을 묶어주는 역할      
+
+#### 집계함수   
+- SUM(): 합계    
+- AVG(): 평균   
+- MIN(): 최소값      
+- MAX(): 최대값     
+- COUNT(): 행의 개수     
+- COUNT(DISTINCT): 행의 개수 (중복은 1개만 인정)       
+
+
+HAVING절: WHERE과 비슷한 개념으로 조건을 제한. 집계 함ㅅ웨 대해 조건을 제한하는 것.       
+HAVING절은 꼭 GROUP BY 절 다음에 나와야 함.      
+
+```       
+SELECT mem_id "회원 아이디", SUM(price*amount) "총 구매 금액"      
+    FROM buy      
+    GROUP BY mem_id     
+    HAVING SUM(price*amount) > 1000      
+    ORDER BY SUM(price*amount) DESC; #내림차순, 총 구매액이 큰 사용자부터                
+```     
+
 
 > **확인문제: 다음 표는 주요 집계함수를 정리한 것입니다. 각 설명에 해당하는 올바른 함수명을 기호에 맞게 작성하세요.**
 
@@ -204,10 +232,10 @@ HAVING절:
 
 ```
 여기에 답을 적어주세요!
-(ㄱ) 
-(ㄴ) 
-(ㄷ) 
-(ㄹ) 
+(ㄱ) AVG()
+(ㄴ) MIN()
+(ㄷ) COUNT()
+(ㄹ) COUNT(DISTICT)
 ```
 
 
@@ -215,12 +243,64 @@ HAVING절:
 
 <!-- INSERT문, UPDATE문, DELETE문에 관해 배우게 된 점을 적어주세요. -->
 
-```
+
 여기에 배우게 된 점을 적어주세요!
-INSERT문: 
-UPDATE문: 
-DELETE문:
-```
+### INSERT문:      
+테이블에 행 데이터를 입력하는 문       
+테이블 이름 다음에 나오는 열은 생략 가능.    
+열 이름 생략 시 VALUES 다음에 나오는 값들의 순서 및 개수는 테이블 정의 시 열 순서 및 개수와 동일해야 함          
+```       
+USE market_db;     
+CREATE TABLE hongong1 (toy_id, INT, toy_name CHAR(4), age INT);        
+INSERT INTO hongong1 VALUES (1, '우디', 25);            
+```       
+#### AUTO_INCREMENT    
+열을 정의할 때 1부터 증가하는 값 입력       
+AUTO_INCREMENT로 지정하는 열은 꼭 PRIMARY KEY로 지정해줘야 함.       
+```        
+CREATE TABLE hongong2(          
+    toy_id INT AUTO_INCREMENT PRIMARY KEY,
+    toy_name CHAR(4),
+    age INT);           
+```         
+-> 아이디 열 자동 증가로 설정     
+
+처음 입력되는 값을 1000으로 지정하고 다음 값은 3씩 증가하도록 설정하는 방법      
+```    
+CREATE TABLE hongong3(          
+    toy_id INT AUTO_INCREMENT PRIMARY KEY,
+    toy_name CHAR(4),    
+    age INT);   
+ALTER TABLE hongong3 AUTO_INCREMENT=1000;        
+SET @@auto_increment_increment=3;       
+```      
+
+#### 다른 테이블의 데이터를 한 번에 입력. INSERT INTO~SELECT       
+```     
+INSERT INTO city_popul   
+    SELECT Name, Population FROM world.city;      
+```       
+
+### UPDATE문:      
+행 데이터 수정해야 하는 경우      
+          
+한 번에 여러 열 값 변경하는 경우     
+New York을 뉴욕으로, population은 0으로 설정    
+```     
+UPDATE city_popul    
+    SET city_name = '뉴욕', population = 0    
+    WHERE city_name = 'New York';     
+SELECT * FROM city_popul WHERE city_name = '뉴욕';         
+```        
+WHERE절을 생략하는 테이블의 모든 행 값이 변경되므로 주의     
+
+### DELETE문:        
+테이블 행 데이터를 삭제해야 하는 경우     
+```    
+DELETE FROM city_popul      
+    WHERE city_name LIKE 'New%';       
+```      
+
 
 
 # 2️⃣ 실습과제
