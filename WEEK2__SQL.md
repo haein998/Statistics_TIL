@@ -45,10 +45,15 @@ https://www.youtube.com/watch?v=WWAFAm9op2U&list=PLVsNizTWUw7GCfy5RH27cQL5MeKYnl
 
 ## 1. 기본 중에 기본 SELECT ~ FROM ~ WHERE
 
-SELCET문: 구축이 완료된 테이블에서 데이터를 추출하는 기능        
+### SELCET문: 
+구축이 완료된 테이블에서 데이터를 추출하는 기능        
 기본 형식 SELCET (열이름) ~ FROM (테이블 이름) ~ WHERE (조건식)          
 
-USE 문: market_db 데이터베이스를 선택하는 문장 
+
+
+           
+### USE 문: 
+market_db 데이터베이스를 선택하는 문장 
 
 ### USE 문     
 USE 데이터베이스_이름;        
