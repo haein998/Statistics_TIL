@@ -50,12 +50,12 @@ SELCET문: 구축이 완료된 테이블에서 데이터를 추출하는 기능
 
 USE 문: market_db 데이터베이스를 선택하는 문장 
 
-#### USE 문     
+### USE 문     
 USE 데이터베이스_이름;        
 SELECT 문을 실행하려면 먼저 사용할 데이터 베이스 지정      
 지금부터 이 DB를 사용하겠다는 의미       
 
-#### SELECT문의 기본 형식         
+### SELECT문의 기본 형식         
 SELECT 열_이름   
     FROM 테이블_이름         
     WHERE 조건식       
@@ -65,27 +65,63 @@ SELECT 열_이름
     LIMIT 숫자        
 
 
-USE market db;     
-SELECT * FROM member;      
+### USE market db;     
+### SELECT * FROM member;      
 ---> SELCET: 테이블에서 데이터를 가져올 때 사용하는 예약어      
     *: 일반적으로 '모든 것'을 의미. 현재 코딩에서는 모든 열을 말함   
     FROM: 테이블이름에서 내용을 가져온다는 의미   
     member: 조회할 테이블 이름       
 ===> member 테이블에서 모든 열의 내용을 가져와라.         
 
-#### SELCET * FROM market_db.member;  
-#### SELECT * FROM member;          
+### SELCET * FROM market_db.member;  
+### SELECT * FROM member;          
 테이블 전체 이름은 "" 데이터베이스_이름.테이블_이름"" 형식
 
-#### SELECT mem_name FROM member;     
+### SELECT mem_name FROM member;     
 해당 테이블에서 필요한 열만 가져오기     
 
-#### SELECT addr, debut_date, mem_name FROM member;     
-여러 개의 열을 가져올 땐 콤마로 구분         
+### SELECT addr, debut_date, mem_name FROM member;     
+여러 개의 열을 가져올 땐 콤마로 구분        
 
-<!-- 과제 페이지를 참조하여 인증 사진 2장을 아래의 부분을 지우고 제출해주세요. -->
+## 특정한 조건만 조회하기: SELECT ~ FROM ~ WHERE    
+             
+             
+### WHERE 없이 조회하기      
+WHERE 없이 SELECT ~ FROM만으로 테이블 조회 시 모든 행 출력       
+               
+               
+#### 기본적인 WHERE 절      
+SELECT 열_이름 FROM 테이블_이름 WHERE 조건식;        
+또는       
+SELECT 열_이름      
+    FROM 테이블_이름         
+    WHERE 조건식;     
 
-<!-- 이 부분을 지우고 인증 사진을 제출해주세요.-->
+
+### 관계 연산자, 논리 연산자의 사용      
+
+```       
+SELECT mem_id, mem_name     
+    FROM member       
+    WHERE height <= 162;      
+```         
+
+```       
+SELECT mem_name, height     
+    FROM member       
+    WHERE height >= 163 AND height <= 165;     
+```    
+
+혹은      
+```       
+SELECT mem_name, height  
+    FROM member       
+    WHERE height BETWEEN 163 AND 165;   
+```         
+ ** 숫자 범위 사용 시 용이**           
+
+
+
 
 > **확인문제: 주소의 지역이 서울, 경기인 회원을 추출하는 SQL 문입니다. 빈칸에 들어갈 수 있는 것을 모두 고르세요.**
 
@@ -104,7 +140,11 @@ WHERE ________;
 ```
 
 ```
-여기에 답과 근거를 적어주세요!
+1, 3번     
+둘 중 하나에 해당하는 주소를 택하도록 코드화된 경우를 선택.     
+2번의 BETWEEN은 숫자 범위 사용 시    
+4번의 AND는 둘 다 해당하는 경우를 출력하는 경우에 사용     
+
 ```
 
 
@@ -114,7 +154,39 @@ WHERE ________;
 
 ```
 여기에 배우게 된 점을 적어주세요!
-ORDER BY절: 
+ORDER BY절: 결과 값이나 개수에 대해서는 영향을 미치지 않지만, 결과가 출력되는 순서를 조절         
+```
+SELECT mem_id, mem_name, debut_date    
+    FROM member    
+    ORDER BY debit_date;      
+```     
+제일 뒤에 ASC를 붙이면 오름차순. DESC를 붙이면 내림차순.       
+           
+ORDER BY 절은 WHERE 절 다음에 나와야 한다.     
+```    
+SELECT mem_id, mem_name, debut_date, height          
+    FROM member     
+    WHERE height >= 164     
+    ORDER BY height DESC;      
+```    
+
+정렬 기준은 1개의 열이 아닌 여러 개 열로 지정 가능.      
+첫 번째 지정 열로 정렬 후, 동일할 경우 다음 지정 열로 정렬 가능   
+```      
+SELECT mem_id, mem_name, debut_date, height   
+    FROM member     
+    WHERE height >= 164 
+    ORDER BY height DESC, debut_Date ASC;      
+```       
+      
+LIMIT은 출력하는 개수를 제한     
+LIMIT 시작, 개수 형식으로 사용. LIMIT 3은 0번째부터 3건이라는 의미     
+```  
+SELECT *        
+    FROM member        
+    LIMIT 3;       
+```           
+
 GROUP BY절: 
 HAVING절:
 ```
