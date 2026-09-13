@@ -49,22 +49,15 @@ https://www.youtube.com/watch?v=WWAFAm9op2U&list=PLVsNizTWUw7GCfy5RH27cQL5MeKYnl
 구축이 완료된 테이블에서 데이터를 추출하는 기능        
 기본 형식 SELCET (열이름) ~ FROM (테이블 이름) ~ WHERE (조건식)          
 
-
-
-
-                                
-
-
-           
 ### USE 문: 
 market_db 데이터베이스를 선택하는 문장 
 
-### USE 문     
 USE 데이터베이스_이름;        
 SELECT 문을 실행하려면 먼저 사용할 데이터 베이스 지정      
 지금부터 이 DB를 사용하겠다는 의미       
 
-### SELECT문의 기본 형식         
+### SELECT문의 기본 형식       
+```         
 SELECT 열_이름   
     FROM 테이블_이름         
     WHERE 조건식       
@@ -72,9 +65,13 @@ SELECT 열_이름
     HAVING 조건식       
     ORDER BY 열_이름      
     LIMIT 숫자        
-
+```        
 
 ### USE market db;     
+.
+.
+.
+
 ### SELECT * FROM member;      
 ---> SELCET: 테이블에서 데이터를 가져올 때 사용하는 예약어      
     *: 일반적으로 '모든 것'을 의미. 현재 코딩에서는 모든 열을 말함   
@@ -184,6 +181,7 @@ SELECT mem_id, mem_name, debut_date, height
     ORDER BY height DESC;      
 ```    
 
+
 정렬 기준은 1개의 열이 아닌 ***여러 개 열***로 지정 가능.      
 첫 번째 지정 열로 정렬 후, 동일할 경우 다음 지정 열로 정렬 가능   
 ```      
@@ -205,7 +203,6 @@ SELECT *
 ```      
 SELECT DISTINCT addr FROM member;    
 ```    
-
 
 ### GROUP BY절: 
 그룹을 묶어주는 역할      
@@ -265,7 +262,10 @@ SELECT mem_id "회원 아이디", SUM(price*amount) "총 구매 금액"
 USE market_db;     
 CREATE TABLE hongong1 (toy_id, INT, toy_name CHAR(4), age INT);        
 INSERT INTO hongong1 VALUES (1, '우디', 25);            
-```       
+```       <br />
+<br />
+<br />
+
 #### AUTO_INCREMENT    
 열을 정의할 때 1부터 증가하는 값 입력       
 AUTO_INCREMENT로 지정하는 열은 꼭 PRIMARY KEY로 지정해줘야 함.       
