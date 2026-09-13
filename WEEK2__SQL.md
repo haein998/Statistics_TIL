@@ -262,9 +262,7 @@ SELECT mem_id "회원 아이디", SUM(price*amount) "총 구매 금액"
 USE market_db;     
 CREATE TABLE hongong1 (toy_id, INT, toy_name CHAR(4), age INT);        
 INSERT INTO hongong1 VALUES (1, '우디', 25);            
-```       <br />
-<br />
-<br />
+```      
 
 #### AUTO_INCREMENT    
 열을 정의할 때 1부터 증가하는 값 입력       
