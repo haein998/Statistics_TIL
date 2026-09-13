@@ -51,6 +51,10 @@ https://www.youtube.com/watch?v=WWAFAm9op2U&list=PLVsNizTWUw7GCfy5RH27cQL5MeKYnl
 
 
 
+
+                                
+
+
            
 ### USE 문: 
 market_db 데이터베이스를 선택하는 문장 
