@@ -120,6 +120,9 @@ SELECT mem_name, height
 ```         
  ** 숫자 범위 사용 시 용이**           
 
+<img width="1544" height="1186" alt="스크린샷 2026-09-13 001940" src="https://github.com/user-attachments/assets/e32334b1-1525-4ef3-b33f-7057dbccce78" />
+<img width="1482" height="1028" alt="스크린샷 2026-09-13 002208" src="https://github.com/user-attachments/assets/9de11702-04bf-43db-a347-f6124d427c9c" />
+
 
 
 
@@ -312,7 +315,16 @@ DELETE FROM city_popul
 3. 현재 구매 테이블에 존재하는 서로 다른 상품(prod_name)이 어떤 것이 있는지 조회하시오.
 4. 총 구매 금액이 1000미만인 prod_name 중 상위 2개만 조회하시오.
 
-<!-- 이 부분을 지우고 인증사진을 제출해주세요.-->
+<img width="1274" height="666" alt="스크린샷 2026-09-13 230903" src="https://github.com/user-attachments/assets/68139c06-b07f-401d-bf4f-c105b5b14ab2" />
+<img width="1282" height="782" alt="스크린샷 2026-09-13 230819" src="https://github.com/user-attachments/assets/1bf9c43d-19d0-4214-99a8-7b3f9553d46d" />
+![Uploading 스크린샷 2026-09-13 230903.png…]()
+<img width="992" height="558" alt="스크린샷 2026-09-13 230945" src="https://github.com/user-attachments/assets/ce33b2d1-9cb3-4938-a0bf-00e1ee44a9ce" />
+
+<img width="1288" height="702" alt="스크린샷 2026-09-13 231354" src="https://github.com/user-attachments/assets/db8b6050-d9b5-41c1-b709-407ce44b1789" />
+
+
+
+
 
 ### 🎉 수고하셨습니다.
 
