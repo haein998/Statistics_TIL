@@ -106,7 +106,8 @@ EXECUTE mySQL USING @count;
 - 암시적 변환  
   CONCAT() 함수 사용       
 
- ![alt text](<../../OneDrive/사진/Screenshots/스크린샷 2026-09-19 165438.png>)
+ <img width="1540" height="1154" alt="스크린샷 2026-09-19 165438" src="https://github.com/user-attachments/assets/f69e7768-7c63-4e24-87dc-06a72c762756" />
+
 
 
 > **확인문제: 다음 보기에서 데이터 형식의 변환에 사용되는 함수를 2개 고르세요.**
