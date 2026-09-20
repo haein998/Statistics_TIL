@@ -144,12 +144,12 @@ WHERE buy.mem_id = 'GRL'  <- 구매 테이블의 7번째에 있는 GRL에 대해
 각 열이 어느 테이블에 속한 것인지 명확하게 표현하는 것은 오히려 복잡해보임.    
 FROM 절에 나오는 테이블 이름 뒤에 별칭을 줘서 간결하게 표현.     
 
-'''      
+```      
 SELECT B.mem_id, M.mem_name, B.prod_name, M.addr, CONCAT(m.phone1, M.phone2) '연락처'     
   FROM buy B       
     INNER JOIN member M      
     ON B.mem_id = M.mem_id ;         
-'''    
+```    
 
 
 ### 외부 조인      
@@ -157,23 +157,23 @@ SELECT B.mem_id, M.mem_name, B.prod_name, M.addr, CONCAT(m.phone1, M.phone2) '�
 #### 외부 조인의 기본     
 외부 조인은 두 테이블을 조인할 때 필요한 내용이 한 쪽 테이블에만 있어도 결과를 추출할 수 있음.      
 
-'''        
+```        
 SELECT <열 목록>    
 FROM <첫 번째 테이블(LEFT 테이블)>      
     <LEFT | RIGHT | FULL> OTHER JOIN <두 번째 테이블(RIGHT 테이블)>     
     ON <조인 될 조건 >     
 [WHERE 검색 조건] ;        
-'''       
+```       
 
 LEFT OUTER JOIN은 왼쪽 테이블의 내용은 모두 출력되어야 한다 의미     
 
-'''   
+```   
 SELECT M.mem_id, M.mem_name, B.prod_name, M.addr    
   FROM member M       
     LEFT OUTER JOIN buy B         
     ON M.mem_id = B.mem_id        
   ORDER BY M.mem_id;        
-'''      
+```      
 
 RIGHT OUTER JOIN은 오른쪽 테이블 기준으로       
 
@@ -187,22 +187,22 @@ RIGHT OUTER JOIN은 오른쪽 테이블 기준으로
     - 결과 내용은 의미 없음. 랜덤으로 조인하기에      
     - 상호 조인의 주 용도는 테스트를 위해 대용량의 데이터 생성 시    
 
-'''      
+```      
 SELECT COUNT(*) "데이터 개수"        
   FROM sakila.inventory      
     CROSS JOIN world.city;      
-'''        
+```        
 
 #### 자체 조인      
 자신이 자신과 조인한다는 의미    
 
-'''      
+```      
 SELECT A.emp "직원", B.emp "직속상관", B.phone "직속상관연락처"    
   FROM emp_table A        
     INNER JOIN emp_table B     
     ON A.manager = B.emp       
   WHERE A.emp = '경리부장' ;      
-'''     
+```     
 
 <img width="1760" height="840" alt="스크린샷 2026-09-20 004334" src="https://github.com/user-attachments/assets/d1914644-ff2a-4554-8ba6-150ebffde674" />
 <img width="1476" height="852" alt="스크린샷 2026-09-20 004215" src="https://github.com/user-attachments/assets/48d399ab-196c-4225-a748-313f4df6a107" />
@@ -241,7 +241,7 @@ SELECT DISTINCT M.mem_id, B.prod_name, M.mem_name, M.addr
 MySQL에서 프로그래밍 기능이 필요할 때 사용하는 데이터베이스 개체     
 
 **스토어드 프로시저 구조**        
-'''    
+```    
 DELMITER $$      
 CREATE PROCEDURE 스토어드_프로시저_이름()         
 BEGIN         
@@ -249,15 +249,15 @@ BEGIN
 END $$     
 DEELIMITER ;        
 CALL 스토어드_프로시저_이름();         
-'''        
+```       
 
 ### IF문     
 조건식이 참이라면 SQL 문장들을 실행하고 그렇지 않으면 패스    
-'''       
+```       
 IF <조건식> THEN    
           SQL 문장들       
 END IF ;      
-'''       
+```       
 
 두 문장 이상 처리할 경우 BEGIN ~ END로 묶어줘야 함     
 
@@ -265,7 +265,7 @@ END IF ;
 조건에 따라 다른 부분을 수행     
 조건이 참이라면 1시행. 아니면 2시행.      
 
-'''     
+```     
 DROP PROCEDURE IF EXISTS ifProc2;    
 DELIMITER $$     
 CREATE PROCEDURE ifProc2()        
@@ -280,12 +280,12 @@ BEGIN
 END $$     
 DELIMITER ;        
 CALL ifProc2();       
-'''       
+```       
 
 ### CASE 문     
 2가지 이상의 여러 가지 경우 처리 가능. '다중분기'        
 
-'''     
+```     
 CASE       
   WHEN 조건1 THEN     
     SQL 문장들 1      
@@ -296,19 +296,19 @@ CASE
   ELSE 
     SQL 문장들 4      
 END CASE ;      
-'''        
+```        
 
 WHEN이 여러개면 조건을 여러 번 반복       
 
 #### CASE 문의 활용       
 
-'''       
+```       
 SELECT mem_id, SUM(price*amount) "총구매액"      
   FROM buy      
   GROUP BY mem_id;       
-'''         
+```         
 
-'''    
+```    
 SELECT M.mem_id, M.mem_name, SUM(price*amount) "총구매액",       
       CASE       
           WHEN (SUM(price*amount) >= 1500) THEN '최우수고객'       
@@ -320,26 +320,26 @@ SELECT M.mem_id, M.mem_name, SUM(price*amount) "총구매액",
             ON B.mem_id = M.mem_id           
       GROUP BY M.mem_id        
       ORDER BY SUM(price*amount) DESC ;     
-'''      
+```      
 
 ### WHILE 문       
 조건식이 참인 동안 SQL 문장들을 계속 반복      
-'''          
+```            
 WHILE <조건식> DO      
       SQL 문장들      
 END WHILE ;      
-'''     
+```     
 
 ### 동적 SQL     
 변경되는 내용을 실시간으로 적용시켜 사용할 수 있음       
 
 #### PREPARE와 EXECUTE       
-'''      
+```   
 use market_db ;       
 PREPARE myQuery FROM 'SELECT * FROM member WHERE mem_id = "BLK"';        
 EXECUTE myQuery;    
 DEALLOCATE PREPARE myQuery ;        
-'''      
+```       
 
 > **확인문제: 다음은 CASE 문의 형식입니다. 빈칸에 들어갈 가장 적절한 명령어를 보기에서 고르세요..**
 
