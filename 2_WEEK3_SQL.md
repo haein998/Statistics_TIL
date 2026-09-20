@@ -202,6 +202,11 @@ SELECT A.emp "직원", B.emp "직속상관", B.phone "직속상관연락처"
   WHERE A.emp = '경리부장' ;      
 '''     
 
+<img width="1760" height="840" alt="스크린샷 2026-09-20 004334" src="https://github.com/user-attachments/assets/d1914644-ff2a-4554-8ba6-150ebffde674" />
+<img width="1476" height="852" alt="스크린샷 2026-09-20 004215" src="https://github.com/user-attachments/assets/48d399ab-196c-4225-a748-313f4df6a107" />
+<img width="1690" height="1116" alt="스크린샷 2026-09-20 004127" src="https://github.com/user-attachments/assets/48e29059-4b9c-41c5-9188-2b3918d0994b" />
+<img width="1234" height="1086" alt="스크린샷 2026-09-20 004104" src="https://github.com/user-attachments/assets/838d81fa-6621-4a4a-8182-7801fa1fedb4" />
+
 
 
 > **확인문제: 다음 SQL은 회원으로 가입만 하고, 한 번도 구매한 적이 없는 회원의 목록을 조회하는 쿼리입니다. 빈칸에 들어갈 가장 적절한 구문을 고르세요..**
@@ -439,7 +444,12 @@ INSERT INTO orders VALUES
    - 생성 후 CALL로 실행 결과를 확인하시오.
 
 
-<!-- 이 부분을 지우고 인증사진을 제출해주세요.-->
+<img width="1378" height="698" alt="스크린샷 2026-09-20 142521" src="https://github.com/user-attachments/assets/2863d67c-3bd6-4e06-bd18-f6118e65f2e7" />
+<img width="1192" height="670" alt="스크린샷 2026-09-20 142608" src="https://github.com/user-attachments/assets/78bebf3b-908a-4df8-aeeb-69d7628f4e16" />
+<img width="1062" height="802" alt="스크린샷 2026-09-20 142825" src="https://github.com/user-attachments/assets/ee3efa78-0fcf-4d1e-ad7a-494ea846a60d" />
+<img width="1104" height="840" alt="스크린샷 2026-09-20 142846" src="https://github.com/user-attachments/assets/34073464-185e-4ad7-8b42-961fb598fcc6" />
+<img width="1310" height="972" alt="스크린샷 2026-09-20 153223" src="https://github.com/user-attachments/assets/adb0732e-3420-4dd8-80e3-1f17c7864f08" />
+
 
 
 ### 🎉 수고하셨습니다.
