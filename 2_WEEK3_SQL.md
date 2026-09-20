@@ -148,7 +148,9 @@ FROM 절에 나오는 테이블 이름 뒤에 별칭을 줘서 간결하게 표�
 SELECT B.mem_id, M.mem_name, B.prod_name, M.addr, CONCAT(m.phone1, M.phone2) '연락처'     
   FROM buy B       
     INNER JOIN member M      
-    ON B.mem_id = M.mem_id ;          
+    ON B.mem_id = M.mem_id ;         
+'''    
+
 
 ### 외부 조인      
 
