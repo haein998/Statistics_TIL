@@ -41,30 +41,41 @@
 
 ## 04-1. 1분 투자로 100점짜리 보고서 완성하기
 > **입력하는 값 & 계산되는 값 구분하기(162 ~ 163p)를 진행 후 인증사진을 첨부해주세요.**
-<!-- 이 부분을 지우고 인증사진을 제출해주세요.-->
+<img width="942" height="608" alt="스크린샷 2026-09-21 000257" src="https://github.com/user-attachments/assets/c1b8dc8d-2155-4fd2-87e0-a09a783fae81" />
 
 
 ## 04-2. 외부 통합 문서 참조할 때 발생하는 오류 처리하기
 > **외부 데이터 원본에 대한 연결 오류 해결하기(166 ~167p)를 진행 후 인증사진을 첨부해주세요.**
-<!-- 이 부분을 지우고 인증사진을 제출해주세요.-->
+<img width="1574" height="1132" alt="스크린샷 2026-09-21 000653" src="https://github.com/user-attachments/assets/970c3efb-2a1a-42ab-8b75-bf65d383ba58" />
+<img width="1398" height="554" alt="스크린샷 2026-09-21 000702" src="https://github.com/user-attachments/assets/dda8ca21-9aee-4b28-9428-22ac1d8bc8b0" />
+
 
 
 ## 04-5. 엑셀은 보안 측면에서 완벽한 프로그램이 아니다
 > **데이터 유효성 검사로 입력할 데이터 제한하기(179 ~183p)를 진행 후 인증사진을 첨부해주세요.**
-<!-- 이 부분을 지우고 인증사진을 제출해주세요.-->
+<img width="1344" height="616" alt="스크린샷 2026-09-21 001328" src="https://github.com/user-attachments/assets/75b862b3-ff1a-4f7e-8ee5-f650e5d4aa17" />
+<img width="1380" height="770" alt="스크린샷 2026-09-21 001514" src="https://github.com/user-attachments/assets/5ee73f76-45b0-45e5-b65a-12274ecacfb3" />
+
 
 > **시트 내용을 수정하지 못하도록 보호하기(186 ~190p)를 진행 후 인증사진을 첨부해주세요.**
-<!-- 이 부분을 지우고 인증사진을 제출해주세요.-->
+<img width="1168" height="666" alt="스크린샷 2026-09-21 001649" src="https://github.com/user-attachments/assets/9e385167-282b-4576-b2bc-20c5fcd8cf84" />
+
 
 
 ## 04-6. 실무자가 반드시 알아야 할 인쇄 설정 기본
 > **해당 내용(194 ~199p)를 진행 후 인증사진을 첨부해주세요.**
-<!-- 이 부분을 지우고 인증사진을 제출해주세요.-->
+<img width="1140" height="690" alt="스크린샷 2026-09-21 002106" src="https://github.com/user-attachments/assets/b2e46602-8c71-49ad-8430-1a00305b8c36" />
+<img width="1490" height="1102" alt="스크린샷 2026-09-21 002353" src="https://github.com/user-attachments/assets/9d754b5d-63cb-49e9-9515-0aee36b26b19" />
+<img width="1012" height="1080" alt="스크린샷 2026-09-21 002415" src="https://github.com/user-attachments/assets/a5c4a78f-0e50-42ba-9a0a-586266467f20" />
+
 
 
 ## 04-7. 여러 페이지 보고서를 인쇄할 때 확인 사항
 > **해당 내용(200 ~207p)를 진행 후 인증사진을 첨부해주세요.**
-<!-- 이 부분을 지우고 인증사진을 제출해주세요.-->
+<img width="562" height="978" alt="스크린샷 2026-09-21 002648" src="https://github.com/user-attachments/assets/8690fe6a-2209-4cec-b3e5-77ede9c0af23" />
+<img width="876" height="526" alt="스크린샷 2026-09-21 002935" src="https://github.com/user-attachments/assets/9277be8e-33ee-4b50-8eb8-7149c75363ac" />
+<img width="760" height="932" alt="스크린샷 2026-09-21 003302" src="https://github.com/user-attachments/assets/593439ac-88f0-4a14-bc37-1157abc6371e" />
+
 
 ---
 
