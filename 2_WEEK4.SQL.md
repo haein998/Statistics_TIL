@@ -181,9 +181,11 @@ ALTER TABLE member
      PRIMARY KEY (mem_id);     
 ```      
 
-### 외래 키 Foreign Key     
+### 외래 키 Foreign Key       
+
 외래 키 제약조건은 두 테이블 사이 관계를 연결해주고, 그 결과 데이터의 무결성을 보장해주는 역할      
 외래 키가 설정된 열은 꼭 다른 테이블의 기본 키와 연결     
+
 ---------------------------------        
 기본 키가 있는 회원 테이블은 - 기준 테이블    
 외래 키가 있는 구매 테이블은 - 참조 테이블    
@@ -343,7 +345,15 @@ USE week4_db;
 1. 각 문제의 실행 결과가 보이도록 화면을 캡처합니다.
 2. 테이블 생성 결과, 데이터 삽입 결과, 뷰 생성 및 조회 결과가 모두 보이도록 제출합니다.
 
-<!-- 이 부분을 지우고 인증사진을 제출해주세요.-->
+<img width="1308" height="720" alt="스크린샷 2026-09-24 192914" src="https://github.com/user-attachments/assets/1f44d21a-b720-42da-8b53-278bdcafc4db" />
+<img width="1128" height="598" alt="스크린샷 2026-09-24 193142" src="https://github.com/user-attachments/assets/94a282e9-a3a1-4134-a867-2891c7c30658" />
+<img width="1674" height="882" alt="스크린샷 2026-09-24 193650" src="https://github.com/user-attachments/assets/6a5444e9-2ab4-4211-8855-5c9e81dd4ecf" />
+<img width="1588" height="780" alt="스크린샷 2026-09-24 194218" src="https://github.com/user-attachments/assets/7ddd8461-11b2-48fc-8c17-5c4d37b65af8" />
+<img width="1584" height="848" alt="스크린샷 2026-09-24 194345" src="https://github.com/user-attachments/assets/f55a65d8-8251-4d64-b8bb-bcf8a646ffb8" />
+<img width="1606" height="876" alt="스크린샷 2026-09-24 194642" src="https://github.com/user-attachments/assets/0c8b75ec-8d15-4e5d-8e1c-369eaa9ac7cc" />
+
+
+
 
 ### 🎉 수고하셨습니다.
 
