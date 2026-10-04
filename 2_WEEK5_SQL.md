@@ -239,7 +239,13 @@ SELECT * FROM second;
 
 <!-- '인덱스 생성과 제거 실습(310p~)' 흐름에 맞게 진행한 후, 실습 과정이 보일 수 있도록 인증 사진을 2장 이상 제출해 주세요. -->
 
-<!-- 이 부분을 지우고 인증사진을 제출해주세요.-->
+<img width="1666" height="696" alt="스크린샷 2026-10-05 005253" src="https://github.com/user-attachments/assets/75bea18a-ff8d-4e19-b165-3efbf78c4561" />
+<img width="1638" height="688" alt="스크린샷 2026-10-05 005424" src="https://github.com/user-attachments/assets/d2fff74a-d3a9-4f3c-a001-cfe3d3935343" />
+<img width="1636" height="660" alt="스크린샷 2026-10-05 005524" src="https://github.com/user-attachments/assets/109581be-8185-48b1-ad28-b49974b2384f" />
+<img width="1154" height="662" alt="스크린샷 2026-10-05 005742" src="https://github.com/user-attachments/assets/2bc97e98-ef07-4dde-b6c5-86070fa21802" />
+
+
+
 
 
 ---
@@ -294,7 +300,11 @@ INSERT INTO employees VALUES
 
 인덱스 생성 결과, EXPLAIN 실행 결과, 인덱스 삭제 결과가 모두 보이도록 캡처하여 제출하세요.
 
-<!-- 이 부분을 지우고 인증사진을 제출해주세요.-->
+<img width="1654" height="554" alt="스크린샷 2026-10-05 005947" src="https://github.com/user-attachments/assets/8a878fc3-5cdd-4f44-9b94-95019475de4c" />
+<img width="1840" height="528" alt="스크린샷 2026-10-05 010010" src="https://github.com/user-attachments/assets/7216bd05-5632-4236-a80d-ec2871583d3a" />
+<img width="1506" height="426" alt="스크린샷 2026-10-05 010034" src="https://github.com/user-attachments/assets/633f7606-7d11-499d-a9a0-a1bf90865d0b" />
+<img width="1268" height="462" alt="스크린샷 2026-10-05 010110" src="https://github.com/user-attachments/assets/bd9a6074-00fe-45fc-af39-6857570553f7" />
+
 
 ### 🎉 수고하셨습니다.
 
