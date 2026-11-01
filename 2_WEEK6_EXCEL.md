@@ -40,7 +40,8 @@
 
 ## 07-1. 엑셀 기초 계산 함수와 통계 함수 사용하기
 > **SUM, AVERAGE, COUNTA 함수로 재고 현황 파악하기(342 ~ 344p)를 진행 후 인증사진을 첨부해주세요.**
-<!-- 이 부분을 지우고 인증사진을 제출해주세요.-->
+<img width="1222" height="590" alt="image" src="https://github.com/user-attachments/assets/aa0f231a-0faa-49ba-b16b-025ce3d2caf4" />
+
 
 > **MAX, MIN, LARGE, SMALL 함수로 만족도 통계 구하기(345 ~ 347p)를 진행 후 인증사진을 첨부해주세요.**
 <!-- 이 부분을 지우고 인증사진을 제출해주세요.-->
@@ -48,55 +49,70 @@
 
 ## 07-2. 논리 함수, 참조 함수, 집계 함수
 > **IF 함수로 성적 관리하기(348 ~ 350p)를 진행 후 인증사진을 첨부해주세요.**
-<!-- 이 부분을 지우고 인증사진을 제출해주세요.-->
+<img width="1294" height="712" alt="image" src="https://github.com/user-attachments/assets/75005e66-b69b-4c75-a472-e3a89ff6e2ff" />
+
 
 > **VLOOKUP, IFERROR 함수로 재고 현황 관리하기(351 ~ 355p)를 진행 후 인증사진을 첨부해주세요.**
-<!-- 이 부분을 지우고 인증사진을 제출해주세요.-->
+<img width="1396" height="778" alt="image" src="https://github.com/user-attachments/assets/f5f9c6d0-12b2-4457-b9d4-0ad31bf82540" />
+
 
 > **SUMIF, COUNTIF, AVERAGEIF 함수로 매출, 배송 현황 관리(355 ~ 365p)를 진행 후 인증사진을 첨부해주세요.**
-<!-- 이 부분을 지우고 인증사진을 제출해주세요.-->
+<img width="1318" height="1076" alt="image" src="https://github.com/user-attachments/assets/7ee1773c-80d4-425b-9e05-71215cc2c8f8" />
+<img width="1176" height="614" alt="image" src="https://github.com/user-attachments/assets/94f62ef6-1111-49df-b96d-2f656c626373" />
+
 
 
 ## 07-3. 엑셀의 활용도를 올려 줄 실무 보조 함수
 > **LEFT, RIGHT, MID 함수로 텍스트 가공하기(366 ~ 370p)를 진행 후 인증사진을 첨부해주세요.**
-<!-- 이 부분을 지우고 인증사진을 제출해주세요.-->
+<img width="1222" height="608" alt="image" src="https://github.com/user-attachments/assets/748f7b4a-5062-4d85-80e0-2565c072dfba" />
+
 
 > **TRIM 함수 사용으로 보이지 않는 문자로 인한 오류 방지하기(370 ~ 373p)를 진행 후 인증사진을 첨부해주세요.**
-<!-- 이 부분을 지우고 인증사진을 제출해주세요.-->
+<img width="1452" height="750" alt="image" src="https://github.com/user-attachments/assets/8ad736c1-be1c-4f0a-a552-7bf7eb9870fa" />
+
 
 > **TODAY, DATE, YEAR/MONTH/DATE 함수로 날짜 구하기(381 ~ 383p)를 진행 후 인증사진을 첨부해주세요.**
-<!-- 이 부분을 지우고 인증사진을 제출해주세요.-->
+<img width="1340" height="596" alt="image" src="https://github.com/user-attachments/assets/496033ac-012c-4b74-90c7-394cbdcee9f1" />
+
 
 > **INDIRECT 함수로 여러 시트 실시간 참조하기(385 ~ 388p)를 진행 후 인증사진을 첨부해주세요.**
-<!-- 이 부분을 지우고 인증사진을 제출해주세요.-->
+<img width="878" height="498" alt="image" src="https://github.com/user-attachments/assets/e9b2194a-cec4-4e68-8aec-6808d9e7fbc6" />
+
 
 
 ## 07-4. 더 강력해진 기능의 엑셀 2021 이후 버전, M365 신규 함수
 > **최신 버전 엑셀에서 배열 사용하기(391 ~ 392p)를 진행 후 인증사진을 첨부해주세요.**
-<!-- 이 부분을 지우고 인증사진을 제출해주세요.-->
+<img width="1142" height="432" alt="image" src="https://github.com/user-attachments/assets/9d79505c-222b-4025-8460-b3983a5b7293" />
+
 
 > **VLOOKUP보다 중요한 필수 신규 함수, FILTER(393 ~ 396p)를 진행 후 인증사진을 첨부해주세요.**
-<!-- 이 부분을 지우고 인증사진을 제출해주세요.-->
+<img width="1446" height="736" alt="image" src="https://github.com/user-attachments/assets/e6cc89e1-12e8-4f7b-9b69-ce6bf593f335" />
+
 
 > **이름만으로도 강력해 보이는 M365 신규 함수, XLOOKUP(396 ~ 398p)를 진행 후 인증사진을 첨부해주세요.**
-<!-- 이 부분을 지우고 인증사진을 제출해주세요.-->
+<img width="1478" height="586" alt="image" src="https://github.com/user-attachments/assets/2d1477f7-160c-4b3b-807c-53bf1906056c" />
 
-> **다른 기능과 만나면 활용도가 배가 되는 UNIQUE, SORT 함수(399 ~ 402p)를 진행 후 인증사진을 첨부해주세요.**
-<!-- 이 부분을 지우고 인증사진을 제출해주세요.-->
+
+> **다른 기능과 만나면 활용도가 배가 되는 UNIQUE, SORT 함수(399 ~ 402p)를 진행 후 인증사진을 첨부해주세요.**<img width="1152" height="596" alt="image" src="https://github.com/user-attachments/assets/1ee6191c-e8ea-4261-a178-56c01fc7897a" />
+
 
 
 ## 07-5. 실무에서 발생하는 어려움을 해결하는 필수 함수 공식
 > **여러 조건을 비교해서 결과 출력하기, 다중 조건 IF 함수(403 ~ 407p)를 진행 후 인증사진을 첨부해주세요.**
-<!-- 이 부분을 지우고 인증사진을 제출해주세요.-->
+<img width="1110" height="526" alt="image" src="https://github.com/user-attachments/assets/5509f5dc-5237-4db5-a729-918167411b7f" />
+
 
 > **단어의 포함 여부를 검색하는 ISNUMBER, SEARCH 함수 공식(407 ~ 411p)를 진행 후 인증사진을 첨부해주세요.**
-<!-- 이 부분을 지우고 인증사진을 제출해주세요.-->
+<img width="1460" height="784" alt="image" src="https://github.com/user-attachments/assets/559f6b59-0146-439d-8a13-52d7af158700" />
+
 
 > **VLOOKUP 함수의 단점을 해결해 주는 INDEX/MATCH 함수 공식(412 ~ 415p)를 진행 후 인증사진을 첨부해주세요.**
-<!-- 이 부분을 지우고 인증사진을 제출해주세요.-->
+<img width="1368" height="710" alt="image" src="https://github.com/user-attachments/assets/4b279fa7-f020-4574-a4f8-fa9221cff371" />
+
 
 > **여러 조건을 만족하는 결과 겁색하기, VLOOKUP 다중 조건 공식(415 ~ 417p)를 진행 후 인증사진을 첨부해주세요.**
-<!-- 이 부분을 지우고 인증사진을 제출해주세요.-->
+<img width="1080" height="736" alt="image" src="https://github.com/user-attachments/assets/b7fb3bc4-3857-488c-a180-a1f9d0ea09ab" />
+
 
 
 ---
